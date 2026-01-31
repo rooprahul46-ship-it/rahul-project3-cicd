@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rahul | Cloud & DevOps Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --primary: #38bdf8;
+      --secondary: #22c55e;
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      padding: 18px 10%;
+      background: rgba(2, 6, 23, 0.95);
+      border-bottom: 1px solid #1e293b;
+      z-index: 100;
+    }
+
+    nav h2 {
+      color: var(--primary);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      color: var(--primary);
+    }
+
+    header p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: var(--muted);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 90px 20px;
+    }
+
+    section h2 {
+      text-align: center;
+      color: var(--secondary);
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 25px;
+      border-radius: 14px;
+      border: 1px solid #334155;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #1e293b;
+      color: var(--muted);
+      background: #020617;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <h2>Rahul</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+  </ul>
+</nav>
+
+<header>
+  <div>
+    <h1>Cloud & DevOps Engineer</h1>
+    <p>AWS | Docker | CI/CD | Linux | Nginx</p>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a Cloud & DevOps Engineer with hands-on experience deploying
+      containerized applications on AWS EC2. I specialize in Docker,
+      automation, and CI/CD pipelines using GitHub Actions.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">AWS EC2 & Networking</div>
+    <div class="card">Docker & Containers</div>
+    <div class="card">CI/CD (GitHub Actions)</div>
+    <div class="card">Linux Administration</div>
+    <div class="card">Nginx Web Server</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Project 3</h2>
+  <div class="card">
+    <h3>Enterprise CI/CD Pipeline</h3>
+    <p>
+      Automated Docker-based application deployment to AWS EC2 using GitHub
+      Actions with zero manual server intervention.
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Rahul | Project 3 – Enterprise CI/CD on AWS
+</footer>
+
+</body>
+</html>
